@@ -110,6 +110,11 @@ namespace Tarea_con_colores_5
 
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fregistro fm = new fregistro(); fm.Show();
+        }
     }
 }
 
