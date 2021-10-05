@@ -73,7 +73,9 @@ namespace Tarea_con_colores_5
 
                 MySqlConnection conexion = new MySqlConnection("Database=agenda;Data Source=localhost;User Id=dba;Password=dba");
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion); System.Data.DataSet ds = new System.Data.DataSet(); da.Fill(ds, "agenda"); dataGridView1.DataSource = ds; dataGridView1.DataMember = "agenda";
-             catch (MySqlException)
+            }
+
+            catch (MySqlException)
             {
                 MessageBox.Show("Ya existe el usuario", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -86,8 +88,36 @@ namespace Tarea_con_colores_5
             textBox1.Enabled = true; textBox2.Enabled = true; comboBox2.Enabled = true;
 
             textBox1.Focus(); button7.Visible = false; button10.Visible = true;
+            {
+                try
+                {
+                    string myConnectionString = ""; if (myConnectionString == "")
+                    {
+                        myConnectionString = "Database=agenda;Data Source=localhost;User Id = root; Password = ";} 
+                    MySqlConnection myConnection = new MySqlConnection(myConnectionString); string myInsertQuery = "UPDATE agenda SET nombre=?nombre, telefono=?telefono 
+                    Where id = " + id.Text + ""; 
+                    MySqlCommand myCommand = new MySqlCommand(myInsertQuery); myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 45).Value = nombre.Text; myCommand.Parameters.Add("?telefono", MySqlDbType.VarChar, 45).Value = telefono.Text;
+                        myCommand.Connection = myConnection; myConnection.Open(); myCommand.ExecuteNonQuery(); myCommand.Connection.Close();
 
+                        avisos a = new avisos();
+                        a.label1.Text = "Actualizado Con Éxito";
+                        a.ShowDialog(); string cad = "Database=agenda;Data Source=localhost;User Id=root;Password="; string query = "select * from agenda";
+                        MySqlConnection cnn = new MySqlConnection(cad);
+                        MySqlDataAdapter da = new MySqlDataAdapter(query, cnn); System.Data.DataSet ds = new System.Data.DataSet(); da.Fill(ds, "agenda");
+                        dataGridView1.DataSource = ds; dataGridView1.DataMember = "agenda";
+                    }
+catch (System.Exception)
+                {
+
+                    avisos a = new avisos();
+                    a.label1.Text = "Hay Campos Vacíos";
+                    a.ShowDialog();
+
+                }
+
+            }
         }
+
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -96,14 +126,14 @@ namespace Tarea_con_colores_5
                 string myConnectionString = ""; if (myConnectionString == "")
                 {
                     myConnectionString = "Database = agenda; Data Source = localhost; User Id = dba; Password = dba = ";  } 
-              MySqlConnection myConnection = new MySqlConnection(myConnectionString); string mySelectQuery = "SELECT * From agenda Where id=" + id.Text + "";
+              MySqlConnection myConnection = new MySqlConnection(myConnectionString); string mySelectQuery = "SELECT * From agenda Where id=" + textBox4.Text + "";
                     MySqlCommand myCommand = new MySqlCommand(mySelectQuery, myConnection); myConnection.Open(); MySqlDataReader myReader; myReader = myCommand.ExecuteReader(); if (myReader.Read())
                     {
-                        Nombre.Text = (myReader.GetString(1)); telefono.Text = (myReader.GetString(2));
+                    textBox5.Text = (myReader.GetString(1)); textBox6.Text = (myReader.GetString(2));
                     }
                     else
                     {
-                        avisos a = new avisos();
+                        fregistro a = new fregistro();
                         a.label1.Text = "El Registro No Existe";
                         a.ShowDialog();
                     }
@@ -112,7 +142,7 @@ namespace Tarea_con_colores_5
             
             catch (System.Exception)
             {
-                avisos a = new avisos();
+                fregistro a = new fregistro();
                 a.label1.Text = "Escribe el ID";
                 a.ShowDialog();
             }
@@ -120,7 +150,36 @@ namespace Tarea_con_colores_5
 
 
         }
-    }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string myConnectionString = ""; if (myConnectionString == "")
+                {
+                    myConnectionString = "Database=agenda;Data Source=localhost;User Id = root; Password = "; 
+                }
+                MySqlConnection myConnection = new MySqlConnection(myConnectionString); string myInsertQuery = "DELETE FROM agenda Where id=" + id.Text + ""; MySqlCommand myCommand = new MySqlCommand(myInsertQuery); myCommand.Connection = myConnection; myConnection.Open(); myCommand.ExecuteNonQuery(); myCommand.Connection.Close();
+
+                avisos a = new avisos();
+                a.label1.Text = "Eliminado Con Éxito";
+                a.ShowDialog(); string cad = "Database=agenda;Data Source=localhost;User Id=root;Password="; string query = "select * from agenda";
+                MySqlConnection cnn = new MySqlConnection(cad);
+                MySqlDataAdapter da = new MySqlDataAdapter(query, cnn); System.Data.DataSet ds = new System.Data.DataSet(); da.Fill(ds, "agenda"); dataGridView1.DataSource = ds; dataGridView1.DataMember = "agenda";
+            }
+            catch (System.Exception)
+            {
+                avisos a = new avisos();
+                a.label1.Text = "Hay Campos Vacíos";
+                a.ShowDialog();
+
+            }
+        }
 
 
 }

@@ -122,6 +122,11 @@ namespace Tarea_con_colores_5
         {
             Close();
         }
+
+        private void lblDevolucion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

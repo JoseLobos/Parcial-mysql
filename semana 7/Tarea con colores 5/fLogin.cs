@@ -28,7 +28,7 @@ namespace Tarea_con_colores_5
 
         SqlConnection conexion = new SqlConnection("server= LAPTOP-3RAU1QMD; database=programacion1; INTEGRATED SECURITY = true");
 
-        String connectionstring = " server=127.0.0.1; port= 3306; user id=root; database= ingreso_mysql ";
+        String connectionstring = "Database=ingreso_mysql;Data Source=localhost;User Id=dba;Password=dba ";
         private void baceptar_Click(object sender, EventArgs e)
         {
             string usuario = txtusuario.Text;

@@ -313,6 +313,7 @@ namespace Tarea_con_colores_5
             this.lblDevolucion.Size = new System.Drawing.Size(40, 19);
             this.lblDevolucion.TabIndex = 20;
             this.lblDevolucion.Text = "0.00";
+            this.lblDevolucion.Click += new System.EventHandler(this.lblDevolucion_Click);
             // 
             // label11
             // 
@@ -333,7 +334,7 @@ namespace Tarea_con_colores_5
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form5
+            // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -358,7 +359,7 @@ namespace Tarea_con_colores_5
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form5";
+            this.Name = "Ventas";
             this.Text = "Formulario de Ventas";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.panel1.ResumeLayout(false);
