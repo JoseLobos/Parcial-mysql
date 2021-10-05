@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace Tarea_con_colores_5
 {
@@ -26,6 +28,7 @@ namespace Tarea_con_colores_5
 
         SqlConnection conexion = new SqlConnection("server= LAPTOP-3RAU1QMD; database=programacion1; INTEGRATED SECURITY = true");
 
+        String connectionstring = " server=127.0.0.1; port= 3306; user id=root; database= ingreso_mysql ";
         private void baceptar_Click(object sender, EventArgs e)
         {
             string usuario = txtusuario.Text;
@@ -113,7 +116,40 @@ namespace Tarea_con_colores_5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            fregistro fm = new fregistro(); fm.Show();
+            String query = "selecct * from tb_user where username - '" + txtusuario.Text + "'  AND  password- ' " + txtcontra.Text + " ' ";
+            MySqlConnection databaseConnection = new MySqlConnection(connectionstring);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+            MySqlDataReader reader;
+
+            try
+            {
+                databaseConnection.Open();
+                reader = commandDatabase.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        MessageBox.Show("Login to fo");
+                        Menú Menú = new Menú();
+                        Menú.Show();
+                        this.Hide();
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(" Oops! Something went wrong. Please try again later");
+
+                }
+                databaseConnection.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
