@@ -109,6 +109,16 @@ namespace Tarea_con_colores_5
             MessageBox.Show(" Los datos fueron eliminados  con exito");
             dataGridView1.DataSource = llenar_grid();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            textBox2.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            comboBox2.Select();
+            textBox4.Clear();
+        }
     }
 }
 
