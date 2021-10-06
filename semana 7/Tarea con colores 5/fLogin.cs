@@ -151,6 +151,11 @@ namespace Tarea_con_colores_5
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            fregistro fm = new fregistro(); fm.Show();
+        }
     }
 }
 
