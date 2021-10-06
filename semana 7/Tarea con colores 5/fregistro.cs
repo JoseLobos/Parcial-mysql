@@ -22,6 +22,7 @@ namespace Tarea_con_colores_5
         static string conexion = "SERVER=127.0.0.1;PORT=3306;DATABASE=agenda;UID=root;PASSWORDS=;";
         MySqlConnection cn = new MySqlConnection(conexion);
 
+
         private void fregistro_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = llenar_grid();
@@ -36,6 +37,7 @@ namespace Tarea_con_colores_5
             da.Fill(dt);
             cn.Close();
             return dt;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,6 +59,46 @@ namespace Tarea_con_colores_5
             dataGridView1.DataSource = llenar_grid();
 
         }
-    }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            cn.Open();
+            string actualizar = "UPDATE contactos SET CODIGO=@codigo,NOMBRE=@nombre,USUARIO=@usuario,CLAVE=@clave,NIVEL=@nivel,CORREO=@correo WHERE CODIGO=@codigo";
+            MySqlCommand cmd = new MySqlCommand(actualizar, cn);
+
+            cmd.Parameters.AddWithValue("@codigo", textBox5.Text);
+            cmd.Parameters.AddWithValue("@nombre", textBox2.Text);
+            cmd.Parameters.AddWithValue("@usuario", textBox1.Text);
+            cmd.Parameters.AddWithValue("@clave", textBox3.Text);
+            cmd.Parameters.AddWithValue("@nivel", comboBox2.Text);
+            cmd.Parameters.AddWithValue("@correo", textBox4.Text);
+            cmd.ExecuteNonQuery();
+
+            cn.Close();
+            MessageBox.Show("Datos actualizados con exito");
+            dataGridView1.DataSource = llenar_grid();
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try 
+            { 
+            textBox5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            comboBox2.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+        }
+        catch {
+    }
+        
+       }
+    }
 }
+
+
+
+
