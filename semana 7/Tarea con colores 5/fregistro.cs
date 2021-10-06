@@ -96,6 +96,19 @@ namespace Tarea_con_colores_5
     }
         
        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            cn.Open();
+            string eliminar = "DELETE FROM contactos WHERE CODIGO=@CODIGO";
+            MySqlCommand cmd = new MySqlCommand (eliminar, cn);
+
+            cmd.Parameters.AddWithValue("@codigo", textBox5.Text);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+            MessageBox.Show(" Los datos fueron eliminados  con exito");
+            dataGridView1.DataSource = llenar_grid();
+        }
     }
 }
 
