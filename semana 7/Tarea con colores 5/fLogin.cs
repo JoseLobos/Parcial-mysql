@@ -116,40 +116,46 @@ namespace Tarea_con_colores_5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String query = "selecct * from tb_user where username - '" + txtusuario.Text + "'  AND  password- ' " + txtcontra.Text + " ' ";
-            MySqlConnection databaseConnection = new MySqlConnection(connectionstring);
-            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-            commandDatabase.CommandTimeout = 60;
-            MySqlDataReader reader;
+            string usuario = txtusuario.Text;
+            string password = txtcontra.Text;
 
-            try
+            if (usuario == "" || password == "")
             {
-                databaseConnection.Open();
-                reader = commandDatabase.ExecuteReader();
+                MessageBox.Show("Llene todos los campos");
+                return;
+            }
+            con.Open();
+            OleDbDataAdapter da = new OleDbDataAdapter("SELECT * FROM usuarios WHERE usuario= '" + txtusuario.Text + "' and password= '" + txtcontra.Text + "'", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            int contador = dt.Rows.Count;
+            if (contador > 0)
 
-                if (reader.HasRows)
+            {
+                string tipo = dt.Rows[0]["tipo usuario"].ToString();
+                if (tipo == "1")
+
                 {
-                    while (reader.Read())
-                    {
-                        MessageBox.Show("Login to fo");
-                        Menú Menú = new Menú();
-                        Menú.Show();
-                        this.Hide();
+                    MessageBox.Show("estandar");
+                    this.Hide();
+                    frmestandar frm = new frmestandar();
+                    frm.Show();
+                }
+                else if (tipo == "2")
+                {
+                    MessageBox.Show("Admin");
+                    this.Hide();
+                    formadmin frm = new formadmin();
+                    frm.Show();
 
-                    }
                 }
                 else
                 {
-                    MessageBox.Show(" Oops! Something went wrong. Please try again later");
-
+                    MessageBox.Show("USUARIO NO AUTORIZADO");
                 }
-                databaseConnection.Close();
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            con.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

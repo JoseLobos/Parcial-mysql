@@ -56,6 +56,8 @@ namespace Tarea_con_colores_5
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +97,7 @@ namespace Tarea_con_colores_5
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.PowderBlue;
-            this.button6.Location = new System.Drawing.Point(248, 299);
+            this.button6.Location = new System.Drawing.Point(136, 351);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(87, 27);
             this.button6.TabIndex = 19;
@@ -106,7 +108,7 @@ namespace Tarea_con_colores_5
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PowderBlue;
-            this.button1.Location = new System.Drawing.Point(355, 299);
+            this.button1.Location = new System.Drawing.Point(246, 299);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 27);
             this.button1.TabIndex = 20;
@@ -290,11 +292,35 @@ namespace Tarea_con_colores_5
             this.label7.TabIndex = 37;
             this.label7.Text = "Codigo";
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.PowderBlue;
+            this.button8.Location = new System.Drawing.Point(30, 351);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(87, 27);
+            this.button8.TabIndex = 38;
+            this.button8.Text = "Salir";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.PowderBlue;
+            this.button11.Location = new System.Drawing.Point(246, 351);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(87, 27);
+            this.button11.TabIndex = 39;
+            this.button11.Text = "Ingresar";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // fregistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -355,5 +381,7 @@ namespace Tarea_con_colores_5
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button11;
     }
 }

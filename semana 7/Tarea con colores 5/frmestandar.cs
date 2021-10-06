@@ -20,9 +20,9 @@ namespace Tarea_con_colores_5
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Form fusuario = new fusuario();
+            Form fregistro = new fregistro();
             this.Hide();
-            fusuario.ShowDialog();
+            fregistro.ShowDialog();
         }
     }
 }

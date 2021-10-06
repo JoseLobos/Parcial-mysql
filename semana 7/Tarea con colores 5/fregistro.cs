@@ -119,6 +119,17 @@ namespace Tarea_con_colores_5
             comboBox2.Select();
             textBox4.Clear();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+            Menú fm = new Menú(); fm.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 
