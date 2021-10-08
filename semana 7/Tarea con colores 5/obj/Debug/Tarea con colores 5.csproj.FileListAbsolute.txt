@@ -378,3 +378,29 @@ C:\Users\Jose Lobos\Source\Repos\Base-de-datos-MYSQL\semana 7\Tarea con colores 
 C:\Users\Jose Lobos\Source\Repos\Base-de-datos-MYSQL\semana 7\Tarea con colores 5\bin\Debug\MySql.Data.dll
 C:\Users\Jose Lobos\Source\Repos\Base-de-datos-MYSQL\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CopyComplete
 C:\Users\Jose Lobos\Source\Repos\Base-de-datos-MYSQL\semana 7\Tarea con colores 5\bin\Debug\Google.Protobuf.dll
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\bin\Debug\Database1.mdb
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\bin\Debug\Tarea con colores 5.exe.config
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\bin\Debug\Tarea con colores 5.exe
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\bin\Debug\Tarea con colores 5.pdb
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\bin\Debug\Google.Protobuf.dll
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.AssemblyReference.cache
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.AboutBox1.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fLogin.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Computadoras.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.formadmin.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fregistro.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.frmestandar.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fusuario.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Integrantes.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Menú.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Laptops.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Celulares.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Ventas.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Ayuda2.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Ayuda.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.Properties.Resources.resources
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.GenerateResource.cache
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CoreCompileInputs.cache
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.csproj.CopyComplete
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.exe
+C:\Users\10kar\OneDrive\Escritorio\Program ciclo II\11\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.pdb

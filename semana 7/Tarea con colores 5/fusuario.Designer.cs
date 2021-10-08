@@ -261,7 +261,7 @@ namespace Tarea_con_colores_5
             "1",
             "2"});
             this.comboBox2.Location = new System.Drawing.Point(324, 162);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(116, 23);
             this.comboBox2.TabIndex = 24;
@@ -274,7 +274,7 @@ namespace Tarea_con_colores_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(477, 420);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox2);
