@@ -68,11 +68,11 @@ namespace Tarea_con_colores_5
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 21);
+            this.label1.Location = new System.Drawing.Point(267, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 20);
+            this.label1.Size = new System.Drawing.Size(236, 20);
             this.label1.TabIndex = 8;
-            this.label1.Text = "INGRESO DE USUARIOS AL SISTEMA";
+            this.label1.Text = "REGISTRO DE USUARIOS ";
             // 
             // button5
             // 
@@ -318,28 +318,31 @@ namespace Tarea_con_colores_5
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.PowderBlue;
             this.button3.Location = new System.Drawing.Point(350, 299);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 27);
             this.button3.TabIndex = 40;
             this.button3.Text = "Limpiar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.PowderBlue;
             this.button4.Location = new System.Drawing.Point(350, 355);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 41;
             this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // fregistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(866, 402);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
