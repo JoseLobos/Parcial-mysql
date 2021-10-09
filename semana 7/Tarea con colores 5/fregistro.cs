@@ -55,7 +55,7 @@ namespace Tarea_con_colores_5
             cmd.ExecuteNonQuery();
 
             cn.Close();
-            MessageBox.Show("Los datos fueron agregados con exito");
+            MessageBox.Show("El usuario ah sido agregado con exito");
             dataGridView1.DataSource = llenar_grid();
 
         }
@@ -75,7 +75,7 @@ namespace Tarea_con_colores_5
             cmd.ExecuteNonQuery();
 
             cn.Close();
-            MessageBox.Show("Datos actualizados con exito");
+            MessageBox.Show("El usuario ah sido modificado con exito");
             dataGridView1.DataSource = llenar_grid();
 
 
@@ -109,15 +109,21 @@ namespace Tarea_con_colores_5
             MessageBox.Show(" Los datos fueron eliminados  con exito");
             dataGridView1.DataSource = llenar_grid();
         }
-
+        
         private void button5_Click(object sender, EventArgs e)
         {
-            textBox5.Clear();
-            textBox2.Clear();
-            textBox1.Clear();
-            textBox3.Clear();
-            comboBox2.Select();
-            textBox4.Clear();
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            comboBox2.Enabled = true;
+            textBox1.Text = "";
+            textBox2.Text = "";
+            comboBox2.Text = "Seleccione nivel";
+            textBox1.Focus();
+            button5.Visible = false;
+            button1.Visible = true;
+            button6.Visible = false;
+            button7.Visible = false;
+            button11.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -129,6 +135,27 @@ namespace Tarea_con_colores_5
         private void button8_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            textBox2.Clear();
+            textBox1.Clear();
+            textBox3.Clear();
+            comboBox2.Select();
+            textBox4.Clear();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox2.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            this.comboBox2.Text = "";
+
         }
     }
 }

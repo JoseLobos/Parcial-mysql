@@ -58,6 +58,7 @@ namespace Tarea_con_colores_5
             this.label7 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -112,7 +113,7 @@ namespace Tarea_con_colores_5
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 27);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Insertar";
+            this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -314,11 +315,22 @@ namespace Tarea_con_colores_5
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(350, 299);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 27);
+            this.button3.TabIndex = 40;
+            this.button3.Text = "Limpiar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // fregistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label7);
@@ -383,5 +395,6 @@ namespace Tarea_con_colores_5
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button3;
     }
 }
