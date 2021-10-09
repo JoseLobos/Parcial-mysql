@@ -124,6 +124,7 @@ namespace Tarea_con_colores_5
             button6.Visible = false;
             button7.Visible = false;
             button11.Visible = false;
+            button3.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -156,6 +157,21 @@ namespace Tarea_con_colores_5
             textBox5.Clear();
             this.comboBox2.Text = "";
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button5.Visible = true;
+            button6.Visible = true;
+            button7.Visible = true;
+            button11.Visible = true;
+            button3.Visible = true;
+            textBox1.Clear();
+            textBox3.Clear();
+            textBox2.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            this.comboBox2.Text = "";
         }
     }
 }
