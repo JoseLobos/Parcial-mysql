@@ -297,7 +297,7 @@ namespace Tarea_con_colores_5
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Candara Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "fusuario";
-            this.Text = "fusuario";
+            this.Text = "SystemUser";
             this.Load += new System.EventHandler(this.fusuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
