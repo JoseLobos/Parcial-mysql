@@ -17,8 +17,8 @@ namespace Tarea_con_colores_5
    
     public partial class fLogin : Form
     {
-        
 
+        public String connectionstring = "Database=agenda;Data Source=localhost;User Id=root;Password= ";
         public fLogin()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Tarea_con_colores_5
 
         SqlConnection conexion = new SqlConnection("server= LAPTOP-3RAU1QMD; database=programacion1; INTEGRATED SECURITY = true");
 
-        String connectionstring = "Database=ingreso_mysql;Data Source=localhost;User Id=dba;Password=dba ";
+       
         private void baceptar_Click(object sender, EventArgs e)
         {
             string usuario = txtusuario.Text;
@@ -116,48 +116,41 @@ namespace Tarea_con_colores_5
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string usuario = txtusuario.Text;
-            string password = txtcontra.Text;
-
-            if (usuario == "" || password == "")
-            {
-                MessageBox.Show("Llene todos los campos");
-                return;
-            }
+            MySqlConnection con = new MySqlConnection(connectionstring);
             con.Open();
-            OleDbDataAdapter da = new OleDbDataAdapter("SELECT * FROM usuarios WHERE usuario= '" + txtusuario.Text + "' and password= '" + txtcontra.Text + "'", con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            int contador = dt.Rows.Count;
-            if (contador > 0)
+            MySqlCommand log = new MySqlCommand("Select clave From contactos where usuario='" + txtusuario.Text + "'", con);
+            MySqlDataReader dtr = log.ExecuteReader();
 
+            if (dtr.HasRows)
             {
-                string tipo = dt.Rows[0]["tipo usuario"].ToString();
-                if (tipo == "1")
-
+                while (dtr.Read())
                 {
-                    MessageBox.Show("estandar");
-                    this.Hide();
-                    frmestandar frm = new frmestandar();
-                    frm.Show();
+                    try
+                    {
+                        if (dtr.GetValue(0).ToString() == txtcontra.Text)
+                        {
+                            try
+                            {
+                                fregistro fm = new fregistro(); fm.Show();
+                            }
+                            catch (MySqlException k)
+                            {
+                                MessageBox.Show(k.ToString());
+                            }
+                        }
+                    }
+                    catch (MySqlException k)
+                    {
+                        MessageBox.Show(k.ToString());
+                    }
                 }
-                else if (tipo == "2")
-                {
-                    MessageBox.Show("Admin");
-                    this.Hide();
-                    formadmin frm = new formadmin();
-                    frm.Show();
-
-                }
-                else
-                {
-                    MessageBox.Show("USUARIO NO AUTORIZADO");
-                }
-
             }
-            con.Close();
-        }
+            else
+            {
+                MessageBox.Show("Ha ocurrido un error");
+            }
 
+        }
         private void button3_Click(object sender, EventArgs e)
         {
             fregistro fm = new fregistro(); fm.Show();
