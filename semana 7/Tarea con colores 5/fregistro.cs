@@ -121,16 +121,46 @@ namespace Tarea_con_colores_5
             textBox1.Focus();
             button5.Visible = false;
             button1.Visible = true;
-            button6.Visible = false;
-            button7.Visible = false;
             button11.Visible = false;
-            button3.Visible = false;
+            button8.Visible = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+            MySqlConnection con = new MySqlConnection(connectionstring);
+            con.Open();
+            MySqlCommand log = new MySqlCommand("Select clave From contactos where usuario='" + textBox1.Text + "'", con);
+            MySqlDataReader dtr = log.ExecuteReader();
 
-            Menú fm = new Menú(); fm.Show();
+            if (dtr.HasRows)
+            {
+                while (dtr.Read())
+                {
+                    try
+                    {
+                        if (dtr.GetValue(0).ToString() == textBox3.Text)
+                        {
+                            try
+                            {
+                                Menú fm = new Menú(); fm.Show();
+                            }
+                            catch (MySqlException k)
+                            {
+                                MessageBox.Show(k.ToString());
+                            }
+                        }
+                    }
+                    catch (MySqlException k)
+                    {
+                        MessageBox.Show(k.ToString());
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ha ocurrido un error");
+            }
+           
         }
 
         private void button8_Click(object sender, EventArgs e)
