@@ -21,7 +21,7 @@ namespace Tarea_con_colores_5
         }
         static string conexion = "SERVER=127.0.0.1;PORT=3306;DATABASE=agenda;UID=root;PASSWORDS=;";
         MySqlConnection cn = new MySqlConnection(conexion);
-
+         public String connectionstring = "Database=agenda;Data Source=localhost;User Id=root;Password= ";
 
         private void fregistro_Load(object sender, EventArgs e)
         {
@@ -176,7 +176,33 @@ namespace Tarea_con_colores_5
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
 
+            {
+
+                string consulta = "Select * from contactos where usuario='" + textBox6.Text + "'";
+
+                MySqlConnection con = new MySqlConnection(connectionstring);
+
+                MySqlDataAdapter comando = new MySqlDataAdapter(consulta, con);
+
+                System.Data.DataSet ds = new System.Data.DataSet();
+
+                comando.Fill(ds, "agenda");
+
+                dataGridView1.DataSource = ds;
+
+                dataGridView1.DataMember = "agenda";
+
+            }
+
+            catch (MySqlException k)
+
+            {
+
+                MessageBox.Show(k.ToString());
+
+            }
         }
     }
 }
