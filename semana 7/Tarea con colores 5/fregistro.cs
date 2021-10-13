@@ -86,11 +86,11 @@ namespace Tarea_con_colores_5
             try 
             { 
             textBox5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            textBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            textBox3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            comboBox2.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            textBox4.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            textBox1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            comboBox2.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
         catch {
     }
