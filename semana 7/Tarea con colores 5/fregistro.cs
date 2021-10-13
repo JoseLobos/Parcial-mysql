@@ -210,7 +210,7 @@ namespace Tarea_con_colores_5
 
             {
 
-                string consulta = "Select * from contactos where usuario='" + textBox6.Text + "'";
+                string consulta = "Select * from contactos where Codigo='" + textBox6.Text + "'";
 
                 MySqlConnection con = new MySqlConnection(connectionstring);
 
