@@ -150,7 +150,7 @@ namespace Tarea_con_colores_5
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(534, 146);
+            this.dataGridView1.Location = new System.Drawing.Point(519, 146);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(320, 217);
             this.dataGridView1.TabIndex = 28;
@@ -201,7 +201,7 @@ namespace Tarea_con_colores_5
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(273, 76);
+            this.label2.Location = new System.Drawing.Point(262, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 32;
@@ -210,7 +210,7 @@ namespace Tarea_con_colores_5
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(273, 112);
+            this.label3.Location = new System.Drawing.Point(262, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 33;
@@ -219,7 +219,7 @@ namespace Tarea_con_colores_5
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(276, 149);
+            this.label4.Location = new System.Drawing.Point(264, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 34;
@@ -228,7 +228,7 @@ namespace Tarea_con_colores_5
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(276, 186);
+            this.label5.Location = new System.Drawing.Point(263, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 35;
@@ -237,7 +237,7 @@ namespace Tarea_con_colores_5
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(276, 221);
+            this.label6.Location = new System.Drawing.Point(264, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 36;
@@ -246,7 +246,7 @@ namespace Tarea_con_colores_5
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(280, 260);
+            this.label7.Location = new System.Drawing.Point(262, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 13);
             this.label7.TabIndex = 37;

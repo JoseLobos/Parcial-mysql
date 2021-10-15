@@ -122,7 +122,7 @@ namespace Tarea_con_colores_5
             button5.Visible = false;
             button1.Visible = true;
             button11.Visible = false;
-            button8.Visible = false;
+            button8.Visible = true;
         }
 
         private void button11_Click(object sender, EventArgs e)
