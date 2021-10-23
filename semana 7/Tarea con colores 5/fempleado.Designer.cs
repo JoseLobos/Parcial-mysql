@@ -82,11 +82,11 @@ namespace Tarea_con_colores_5
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 9);
+            this.label1.Location = new System.Drawing.Point(354, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 20);
+            this.label1.Size = new System.Drawing.Size(251, 20);
             this.label1.TabIndex = 10;
-            this.label1.Text = "EMPLEADOS Y REGISTRO DE EMPLEADOS ";
+            this.label1.Text = "REGISTRO DE EMPLEADOS ";
             // 
             // dataGridView1
             // 
@@ -119,7 +119,7 @@ namespace Tarea_con_colores_5
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(256, 29);
+            this.label2.Location = new System.Drawing.Point(256, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 34;
@@ -556,7 +556,7 @@ namespace Tarea_con_colores_5
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "fempleado";
-            this.Text = "fempleado";
+            this.Text = "SISTEMA DE VENTA DE APARATOS ELECTRONICOS.REGISTRO DE EMPLEADOS";
             this.Load += new System.EventHandler(this.fempleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
