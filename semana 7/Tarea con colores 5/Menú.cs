@@ -111,6 +111,18 @@ namespace Tarea_con_colores_5
         {
 
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form fempleado = new fempleado();
+            fempleado.Show();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form fconsultaempledado = new fconsultaempledado();
+            fconsultaempledado.Show();
+        }
     }
     }
 

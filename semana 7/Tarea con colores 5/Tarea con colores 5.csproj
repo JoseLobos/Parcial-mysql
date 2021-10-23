@@ -65,6 +65,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="fconsultaempledado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fconsultaempledado.Designer.cs">
+      <DependentUpon>fconsultaempledado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fempleado.Designer.cs">
+      <DependentUpon>fempleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Acerca de.resx">
       <DependentUpon>Acerca de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fconsultaempledado.resx">
+      <DependentUpon>fconsultaempledado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fempleado.resx">
+      <DependentUpon>fempleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>

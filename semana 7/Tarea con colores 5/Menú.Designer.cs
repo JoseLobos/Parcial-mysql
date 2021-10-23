@@ -33,6 +33,9 @@ namespace Tarea_con_colores_5
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formularioDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computadorasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.computadorasDisponiblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laptopsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,6 +56,7 @@ namespace Tarea_con_colores_5
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.formulariosToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.computadorasToolStripMenuItem1,
             this.laptopsToolStripMenuItem1,
             this.celularesToolStripMenuItem1,
@@ -70,7 +74,8 @@ namespace Tarea_con_colores_5
             // formulariosToolStripMenuItem
             // 
             this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formularioDeVentasToolStripMenuItem});
+            this.formularioDeVentasToolStripMenuItem,
+            this.empleadosToolStripMenuItem});
             this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
             this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.formulariosToolStripMenuItem.Text = "Formularios";
@@ -81,6 +86,28 @@ namespace Tarea_con_colores_5
             this.formularioDeVentasToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.formularioDeVentasToolStripMenuItem.Text = "Formulario de Ventas";
             this.formularioDeVentasToolStripMenuItem.Click += new System.EventHandler(this.formularioDeVentasToolStripMenuItem_Click);
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empleadoToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
+            this.toolStripMenuItem1.Text = "Consultas";
+            // 
+            // empleadoToolStripMenuItem
+            // 
+            this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empleadoToolStripMenuItem.Text = "Empleado";
+            this.empleadoToolStripMenuItem.Click += new System.EventHandler(this.empleadoToolStripMenuItem_Click);
             // 
             // computadorasToolStripMenuItem1
             // 
@@ -211,5 +238,8 @@ namespace Tarea_con_colores_5
         private System.Windows.Forms.ToolStripMenuItem laptopsToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem celularesDisponiblesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem computadorasDisponiblesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem;
     }
 }
