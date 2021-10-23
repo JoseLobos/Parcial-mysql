@@ -30,7 +30,6 @@ namespace Tarea_con_colores_5
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -74,8 +73,9 @@ namespace Tarea_con_colores_5
             this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,32 +88,20 @@ namespace Tarea_con_colores_5
             this.label1.TabIndex = 10;
             this.label1.Text = "EMPLEADOS Y REGISTRO DE EMPLEADOS ";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::Tarea_con_colores_5.Properties.Resources._560216;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(211, 215);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 396);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 371);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(887, 133);
+            this.dataGridView1.Size = new System.Drawing.Size(887, 158);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.PowderBlue;
-            this.button2.Location = new System.Drawing.Point(235, 363);
+            this.button2.Location = new System.Drawing.Point(235, 338);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 27);
             this.button2.TabIndex = 32;
@@ -123,7 +111,7 @@ namespace Tarea_con_colores_5
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(24, 363);
+            this.textBox6.Location = new System.Drawing.Point(37, 338);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(186, 20);
             this.textBox6.TabIndex = 33;
@@ -412,7 +400,7 @@ namespace Tarea_con_colores_5
             // 
             this.button9.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(601, 264);
+            this.button9.Location = new System.Drawing.Point(601, 229);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(87, 27);
             this.button9.TabIndex = 77;
@@ -424,7 +412,7 @@ namespace Tarea_con_colores_5
             // 
             this.button7.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(708, 264);
+            this.button7.Location = new System.Drawing.Point(708, 229);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(87, 27);
             this.button7.TabIndex = 78;
@@ -436,7 +424,7 @@ namespace Tarea_con_colores_5
             // 
             this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(814, 264);
+            this.button5.Location = new System.Drawing.Point(814, 229);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 27);
             this.button5.TabIndex = 79;
@@ -448,7 +436,7 @@ namespace Tarea_con_colores_5
             // 
             this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(601, 304);
+            this.button4.Location = new System.Drawing.Point(601, 270);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 29);
             this.button4.TabIndex = 80;
@@ -460,7 +448,7 @@ namespace Tarea_con_colores_5
             // 
             this.button6.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(708, 306);
+            this.button6.Location = new System.Drawing.Point(708, 271);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(87, 27);
             this.button6.TabIndex = 81;
@@ -472,7 +460,7 @@ namespace Tarea_con_colores_5
             // 
             this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(814, 306);
+            this.button1.Location = new System.Drawing.Point(814, 271);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 82;
@@ -484,7 +472,7 @@ namespace Tarea_con_colores_5
             // 
             this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(601, 348);
+            this.button8.Location = new System.Drawing.Point(601, 315);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(87, 27);
             this.button8.TabIndex = 83;
@@ -496,13 +484,25 @@ namespace Tarea_con_colores_5
             // 
             this.button3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(814, 348);
+            this.button3.Location = new System.Drawing.Point(814, 315);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 27);
             this.button3.TabIndex = 84;
             this.button3.Text = "Limpiar";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::Tarea_con_colores_5.Properties.Resources._560216;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(211, 215);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // fempleado
             // 
@@ -558,8 +558,8 @@ namespace Tarea_con_colores_5
             this.Name = "fempleado";
             this.Text = "fempleado";
             this.Load += new System.EventHandler(this.fempleado_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

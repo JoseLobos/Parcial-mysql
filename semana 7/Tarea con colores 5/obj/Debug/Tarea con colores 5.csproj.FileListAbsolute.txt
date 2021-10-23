@@ -459,3 +459,4 @@ C:\Users\Jose Lobos\Source\Repos\Parcial-mysql\semana 7\Tarea con colores 5\obj\
 C:\Users\Jose Lobos\Source\Repos\Parcial-mysql\semana 7\Tarea con colores 5\obj\Debug\Tarea con colores 5.pdb
 C:\Users\Jose Lobos\Source\Repos\Parcial-mysql\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fempleado.resources
 C:\Users\Jose Lobos\Source\Repos\Parcial-mysql\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fconsultaempledado.resources
+C:\Users\Jose Lobos\Source\Repos\Parcial-mysql\semana 7\Tarea con colores 5\obj\Debug\Tarea_con_colores_5.fconsultausuarios.resources

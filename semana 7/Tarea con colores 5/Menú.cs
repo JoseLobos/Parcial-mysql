@@ -123,6 +123,18 @@ namespace Tarea_con_colores_5
             Form fconsultaempledado = new fconsultaempledado();
             fconsultaempledado.Show();
         }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form fregistro = new fregistro();
+            fregistro.Show();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form fconsultausuarios = new fconsultausuarios();
+            fconsultausuarios.Show();
+        }
     }
     }
 
